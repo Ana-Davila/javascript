@@ -15,15 +15,18 @@
     <h1>Iniciando estudos com DOM </h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> com JavaScript</p>
-    <div>CLIQUE EM MIM</div>
+    <div id="msg">CLIQUE EM MIM</div>
 
 
     <script>
-        var corpo= window.document.body
-        var p1 = window.document.getElementsByTagName('p')[0]
+        var corpo= window.document.body //por marca
+        var p1 = window.document.getElementsByTagName('p')[0]// primeiro parágrafo
         window.document.write('Está escrito assim: ' + p1.innerText)
         p1.style.color = 'blue'
         corpo.style.background = 'Gray'
+
+        var d = window.document.getElementById('msg') // por id
+        d.style.background = 'green'
     </script>
 </body>
 </html>
