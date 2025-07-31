@@ -30,13 +30,16 @@
 
     <script>
         function somar(){
+            //Captura elementos e guarda na var tn1, tn2 e res
             var tn1 = window.document.getElementById('txt1')
             var tn2 = window.document.getElementById('txt2')
             var res = window.document.getElementById('res')
 
+            //pega os valores e converte para numeros
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
 
+            //soma e exibe
             var s = n1 + n2
             res.innerHTML = `A soma entre ${n1} e ${n2} é ${s}`
         }
