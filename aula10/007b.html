@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refazendo passos</title>
+</head>
+<body>
+    <h1>Vamos dividir juntos?</h1>
+    Digite o dividendo <input type="number" name="n1" id="n1">
+    Digite o divisor <input type="number" name="n2" id="n2">
+    <input type="button" value="Dividir" onclick="soma()">
+    <p id="res">Resposta</p>
+
+    <script>
+        function soma(){
+        //pega os números digitados pelo usuário e guarda na var tn1, tn2 e res
+        var tn1 = window.document.getElementById('n1')
+        var tn2 = window.document.getElementById('n2')
+        var res = window.document.getElementById('res')
+         
+        //transforma tn1 e tn2 em números
+        var d1 = Number(tn1.value)
+        var d2 = Number(tn2.value)
+
+        //faz a divisão e mostra o resultado <3
+        var d = d1/d2
+        res.innerText= `A divisão de ${d1} e ${d2} é: ${d}`
+
+        }
+    </script>
+</body>
+</html>
