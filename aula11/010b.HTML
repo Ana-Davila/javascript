@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR ou Estrangeiro</title>
+</head>
+<body>
+    <h1>Vamos descobrir se você é Brasileiro</h1>
+
+    Digite seu país de origem: <input type="text" name="paisdigitado" id="paisdigitado">
+    <input type="button" value="descobrir" onclick="descubra()">
+    <div id="res">RESPOSTA</div>
+
+    <script>
+        function descubra(){
+            var pais= window.document.getElementById('paisdigitado').value //.value obtém o que foi digitado pelo usuário
+            var resposta = window.document.getElementById('res')
+
+            if(pais.toLowerCase() === 'brasil'){ //pais.toLowerCase()deixa todo o conteúdo de pais em minusculo depois compara com brasil
+                resposta.innerHTML = 'Você é Brasileiro'
+            }
+        }
+    </script>
+</body>
+</html>
